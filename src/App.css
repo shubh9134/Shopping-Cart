@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .table th,
+  .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    background-color: #ddd;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .table th {
+    background-color: #04aa6d;
+    color: white;
   }
+  
+  .iimagesize {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .trash {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .total {
+    padding-bottom:10px;
+    font-weight: bold;
+    padding-right:20px ;
+  }
+  
+  .item-count {
+    text-align: center;
+  }
+.imagesize{
+    height : 150px;
+    width : 150px;
+    padding-left: 50px;
 }
+
+.navbar{
+    font-style:oblique;
+    font-size: medium;
+    display: inline;
+    padding:  10px 50px;
+    text-align:end;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color:midnightblue;
+    color:whitesmoke;
+    position: relative;
+    left : 250px;
+}
+.navbar:hover{
+    background-color:cornflowerblue;
+    
+}
+.title{
+    font-weight: bolder;
+    color : whitesmoke;
+    background-color:midnightblue;
+    text-align : center;
+    padding: 10px 40px;
+}
+.outernav{
+    display:flex;
+    padding : 40px 0px;
+}
+.render{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.iiimagesize{
+    height : 25px;
+    margin-left: 200px;
+    padding-top : 10px;
+
+}
+.iiimagesize:hover{
+    filter: grayscale(100%);
+    box-shadow: 0 3px black;
+}
+.box{
+    height : 300px;
+    width : 350px;
+    margin : 20px ;
+    display: inline-block;
+    background-color:lightsteelblue;
+    padding-left : 80px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    border : ridge black
+}
+.boxtitle{
+    font-weight: bolder;
+    color : whitesmoke;
+    background-color:midnightblue;
+    text-align : center;
+    text-transform: capitalize;
+}
+.price{
+    width : 60px;
+    height : 25px;
+    background-color:white;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 200px;
+    padding-left: 5px;
+}
+.dropdown-box {
+    position: absolute;
+    top: 130px; 
+    right :10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 9999;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .buttton {
+    position: fixed;
+    top: 40px;
+    right: 80px;
+    z-index: 999; /* Adjust the z-index value as needed */
+    height : 40px;
+    width : 40px;
+
+  }
+  @media (max-width: 767px) {
+    .imagesize {
+      height: 100px;
+      width: 100px;
+      padding-left: 20px;
+    }
+  
+    .navbar {
+      left: 0;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  
+  
+  
+    
